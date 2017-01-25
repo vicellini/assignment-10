@@ -14,7 +14,7 @@ var shortiesOnly = function(arr){
       outputArray.push(arr[i]);
     }
   }
-  console.log(outputArray)
+  // console.log(outputArray)
   return outputArray;
 }
 

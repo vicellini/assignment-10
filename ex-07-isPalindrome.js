@@ -9,21 +9,34 @@
  * from the previous queestion
 */
 
+// var isPalindrome = function (testString){
+//   var truePalindrome = false;
+//   var newArray = []
+//   for(var i = 0; i < testString.length; i = i + 1){
+//     newArray.unshift(testString[i]);
+//   }
+//   var reversedWord = newArray.join('');
+//   // console.log(reversedWord);
+//   if(testString === reversedWord){
+//     truePalindrome = true;
+//   }
+//   return truePalindrome;
+// }
+
+//Take 2
+
 var isPalindrome = function (testString){
   var truePalindrome = false;
-  var newArray = []
-  for(var i = 0; i < testString.length; i = i + 1){
-    newArray.unshift(testString[i]);
-  }
-  var reversedWord = newArray.join('');
+  var reversedWord = ''
+  for(var i = testString.length - 1; i > -1; i = i - 1){
+      reversedWord = reversedWord + testString[i];
+    }
   // console.log(reversedWord);
   if(testString === reversedWord){
     truePalindrome = true;
   }
   return truePalindrome;
 }
-
-
 
 
 

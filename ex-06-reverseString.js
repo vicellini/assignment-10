@@ -8,14 +8,27 @@
  *
 */
 
+// var reverseString = function(testString){
+//   var newArray = []
+//   for(var i = 0; i < testString.length; i = i + 1){
+//     newArray.unshift(testString[i]);
+//   }
+//   var reversedWord = newArray.join('');
+//   // console.log(reversedWord);
+//   return reversedWord;
+//
+// }
+
+//Take 2
+
 var reverseString = function(testString){
-  var newArray = []
-  for(var i = 0; i < testString.length; i = i + 1){
-    newArray.unshift(testString[i]);
+  var newString = ''
+  for(var i = testString.length - 1; i > -1; i = i - 1){
+    newString = newString + testString[i];
+    console.log(newString)
   }
-  var reversedWord = newArray.join('');
+  return newString;
   // console.log(reversedWord);
-  return reversedWord;
 
 }
 
